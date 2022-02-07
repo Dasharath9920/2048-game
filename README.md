@@ -11,3 +11,7 @@ resulting tile cannot merge with another tile again in the same move. If a move 
 consecutive tiles of the same value to slide together, only the two tiles farthest along the
 direction of motion will combine. If all four spaces in a row or column are filled with tiles of the
 same value, a move parallel to that row/column will combine the first two and last two.
+
+## instructions
+Use numbers from 1 to 4 (1-left, 2-right, 3-top, 4-bottom) to move the tiles. Tiles with the 
+same number merge into one when they touch. Add them up to reach 2048!
