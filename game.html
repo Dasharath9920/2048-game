@@ -1,0 +1,51 @@
+/*
+  HTML code for 2048 Game
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel = "stylesheet" href = "index.css"/>
+   <title>2048 Game</title>
+</head>
+<body>
+   <section class="container">
+      <div class="frame">
+         <div class="header">
+            <div class="header-left">
+               <h1>2048</h1>
+               <p>Join the tiles, get to <span>2048!</span></p>
+               <a href="#matrix">How to play ---></a>
+            </div>
+            <div class="header-right">
+               <div class="scores">
+                  <div class="score">
+                     <h2>score</h2>
+                     <h1 id = "score">0</h1>
+                  </div>
+                  <div class="score">
+                     <h2>best</h2>
+                     <h1 id = "bestScore">0</h1>
+                  </div>
+               </div>
+               <button class = "btn" id = "btn">new game</button>
+            </div>
+         </div>
+         <div id="matrix"></div>  
+         <div id="Cmatrix"></div>
+         <p><span style="color:  rgb(53, 51, 51)">HOW TO PLAY: </span>Use <span>numbers from 1 to 4 (1-left, 2-right, 3-top, 4-bottom)</span> to move the tiles. Tiles with the same number <span>merge into one</span> when they touch. Add them up to reach
+         <span>2048!</span></p>
+         <div id="status">
+            <h1 class="status">game over</h1>
+            <h2 class = "status1"></h2>
+            <h2 class = "status2"></h2>
+         </div>
+      </div>
+   </section>
+
+   <script src = "index.js"></script>
+</body>
+</html>
